@@ -10,7 +10,7 @@
 ||                                                                           ||
 >>===========================================================================<<
 
-AutVox CLI v0.0.1 - Open Beta
+AutVox CLI v0.0.1 - Open Alpha
 by nyxiebitsyspider
 licensed under GPL3.0-or-later
 
