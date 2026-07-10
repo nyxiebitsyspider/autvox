@@ -33,9 +33,11 @@ cd autvox # cd into parent directory of executable
 - options menu with voice selection
 - config file affected by options menu
 - command line arguments
-- makefiles for easier install
+- makefiles for easier install on alternative architectures building from source
+- binary for 64-bit ARM and x86 architectures
 
 ### Long-Term
 
 - TUI using ncurses
 - ability to import custom voice from file
+- binary for 32-bit ARM and x86 architectures (full release)
