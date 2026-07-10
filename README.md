@@ -11,7 +11,7 @@
 AutVox is currently in open beta. There is currently only one way to properly install AutVox for guaranteed compatibility: Clone the repo and compile from source.
 
 ```
-git clone <autvox-github-url> # clone repo
+git clone https://github.com/nyxiebitsyspider/autvox.git # clone repo
 cd autvox # cd into cloned repo
 gcc src/main.c -libespeak-ng -o autvox # compile from source
 ```
