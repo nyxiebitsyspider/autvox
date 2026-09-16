@@ -16,15 +16,17 @@ My special interest is computers, so I'm entirely self-taught. This is also only
 
 ## Compatibility
 
-AutVox currently has no binaries available, but the plan is to release binaries for all architectures I am able to test on. 64-bit Linux on both ARM and x86 are the extent of planned releases. Eventually there may be a flatpak version if there's interest. No official support for MacOS or Windows is planned, though if anyone wants to fork the project and maintin it for those architectures, you have my blessing.
+AutVox currently has my personal binary available for convenience, but the plan is to release binaries for all architectures I am able to test on. 64-bit Linux on both ARM and x86 are the extent of planned releases. Eventually there may be a flatpak version if there's interest. No official support for MacOS or Windows is planned, though if anyone wants to fork the project and maintin it for those architectures, you have my blessing.
 
 ## Prerequisites
 
 - [espeak-ng](https://github.com/espeak-ng/espeak-ng/blob/master/docs/guide.md#installation) (can be installed through your distro's package manager such as apt-get, yum, pacman, etc)
+- A Linux distribution running PulseAudio (this software WILL NOT work with Pipewire as written as far as I can tell)
+- A C compiler (gcc, clang, etc.)
 
 ## Installation
 
-AutVox is currently available from source code in open alpha. There is only one way to properly install AutVox at this time: Clone the repo and compile from source.
+AutVox is currently available from source code in open alpha. Though my personal binary is provided for convenience, there is only one supported way to properly install AutVox at this time: Clone the repo and compile from source.
 
 ```
 git clone https://github.com/nyxiebitsyspider/autvox.git # clone repo

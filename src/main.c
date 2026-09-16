@@ -10,7 +10,7 @@
 ||                                                                           ||
 >>===========================================================================<<
 
-AutVox CLI v0.0.1 - Open Alpha
+AutVox CLI v0.0.1a - Open Alpha Revision A
 by nyxiebitsyspider
 licensed under GPL3.0-or-later
 
@@ -77,7 +77,7 @@ static void speakText() {
             // perform text-to-speech operation
             espeak_Initialize(output, buflength, path, options);
             espeak_SetVoiceByName(voicename);
-            espeak_SetParameter(espeakRATE, 105, 0);
+            espeak_SetParameter(espeakRATE, 195, 0);
             printf("Saying: \'%s\'...\n", speech);
             espeak_Synth(speech, buflength, position, position_type, end_position, flags, identifier, user_data);
             printf("Done!\n");
