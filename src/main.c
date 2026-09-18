@@ -77,7 +77,7 @@ static void speakText() {
             // perform text-to-speech operation
             espeak_Initialize(output, buflength, path, options);
             espeak_SetVoiceByName(voicename);
-            espeak_SetParameter(espeakRATE, 195, 0);
+            espeak_SetParameter(espeakRATE, 165, 0);
             printf("Saying: \'%s\'...\n", speech);
             espeak_Synth(speech, buflength, position, position_type, end_position, flags, identifier, user_data);
             printf("Done!\n");
