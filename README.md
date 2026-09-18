@@ -20,8 +20,7 @@ AutVox currently has my personal binary available for convenience, but the plan 
 
 ## Prerequisites
 
-- [espeak-ng](https://github.com/espeak-ng/espeak-ng/blob/master/docs/guide.md#installation) (can be installed through your distro's package manager such as apt-get, yum, pacman, etc)
-- A Linux distribution running PulseAudio (this software WILL NOT work with Pipewire as written as far as I can tell)
+- [espeak-ng](https://github.com/espeak-ng/espeak-ng/blob/master/docs/guide.md#installation) and its prerequisites (can be installed through your distro's package manager such as apt-get, yum, pacman, etc)
 - A C compiler (gcc, clang, etc.)
 
 ## Installation
