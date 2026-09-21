@@ -23,7 +23,6 @@ licensed under GPL3.0-or-later
 #include <ctype.h>
 #include <espeak-ng/speak_lib.h>
 
-
 // INITIALIZE VARIABLES
 char command = '\0'; // set command to null
 char exitConfirm = '\0'; // set exit confirmation to null
