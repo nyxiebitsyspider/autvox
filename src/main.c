@@ -17,6 +17,7 @@ licensed under GPL3.0-or-later
 */
 
 // INCLUDE LIBRARIES
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -24,23 +25,26 @@ licensed under GPL3.0-or-later
 #include <espeak-ng/speak_lib.h>
 
 // INITIALIZE VARIABLES
+
 char command = '\0'; // set command to null
 char exitConfirm = '\0'; // set exit confirmation to null
 char speakAgain = '\0'; // set speak again confirmation to null
 char optionSelect = '\0'; // set option selection to null
-char *speech;
+char *speech; // set pointer to speech input
 int iteration = 1; // initialize iteration counter for do while loop
 int speechUses = 0; // initialize counter for speech while loop
 int maxSpeechUses = 128; // initialize iteration limit for speech while loop
 
 // INITIALIZE ESPEAK LIBRARY VARIABLES
-espeak_AUDIO_OUTPUT output = AUDIO_OUTPUT_SYNCH_PLAYBACK;
-char *path = NULL;
-void* user_data;
-unsigned int *identifier;
+
+espeak_AUDIO_OUTPUT output = AUDIO_OUTPUT_SYNCH_PLAYBACK; // allow audio output
+char *path = NULL; // do not generate a file of audio output
+void* user_data; // handled by library
+unsigned int *identifier; // handled by library
 
 
 // GET SINGLE-CHARACTER INPUT
+
 static char read_first_nonws_char(void) {
     char buf[64]; // create input string
     if (fgets(buf, sizeof(buf), stdin) == NULL) {
@@ -55,6 +59,7 @@ static char read_first_nonws_char(void) {
 }
 
 // TEXT-TO-SPEECH FUNCTION
+
 static void speakText() {
     while (speechUses < maxSpeechUses) {
         printf("Please enter the text you'd like to say (up to 256 characters):\n"); // prompt user for input
@@ -65,7 +70,7 @@ static void speakText() {
         }
         fgets(speech, 128, stdin); // get speech input
         if (speech[0] == '\0') { // check if input intered
-            printf("You have not entered any text to speak. Please type what you'd like to say and press ENTER.\n");
+            printf("You have not entered any text to speak. Please type what you'd like to say and press ENTER.\n"); // warn user if no text entered
         } else {
             speech[strlen(speech) - 1] = '\0'; // remove trailing newline
             // set espeak variables
